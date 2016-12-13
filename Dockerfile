@@ -16,7 +16,15 @@ RUN apt-get update && \
         flex g++-multilib gcc-multilib git gnupg gperf lib32ncurses5-dev \
         lib32z1-dev libesd0-dev libncurses5-dev \
         libsdl1.2-dev libwxgtk3.0-dev libxml2-utils lzop sudo \
-        openjdk-8-jdk \
+        openjdk-8-jdk curl wget nano emacs \
+        yasm squashfs-tools genisoimage dosfstools mtools \
+        libc6-dev x11proto-core-dev python-markdown\
+        libgl1-mesa-dev mingw32 tofrodos zlib1g-dev:i386\
+        libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386\
+        libswitch-perl u-boot-tools uuid-dev liblzo2-dev \
+        software-properties-common python-software-properties \
+        libxml2-utils python-networkx gettext python-libxml2 \
+        yasm squashfs-tools genisoimage dosfstools mtools \
         pngcrush schedtool xsltproc zip zlib1g-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
