@@ -19,7 +19,7 @@ if [ -z ${GROUP_ID+x} ]; then GROUP_ID=1000; fi
 
 msg="docker_entrypoint: Creating user UID/GID [$USER_ID/$GROUP_ID]" && echo $msg
 groupadd -g $GROUP_ID -r aosp && \
-useradd -u $USER_ID --create-home -r -g aosp aosp
+useradd -u $USER_ID --create-home -r -g aosp aosp && echo "aosp:aosp" | chpasswd && adduser builder sudo
 echo "$msg - done"
 
 msg="docker_entrypoint: Copying .gitconfig and .ssh/config to new user home" && echo $msg
