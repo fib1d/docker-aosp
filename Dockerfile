@@ -19,8 +19,7 @@ RUN apt-get update && \
         openjdk-8-jdk curl wget nano emacs \
         yasm squashfs-tools genisoimage dosfstools mtools \
         libc6-dev x11proto-core-dev python-markdown\
-        libgl1-mesa-dev mingw32 tofrodos zlib1g-dev:i386\
-        libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386\
+        libgl1-mesa-dev tofrodos \
         libswitch-perl u-boot-tools uuid-dev liblzo2-dev \
         software-properties-common python-software-properties \
         libxml2-utils python-networkx gettext python-libxml2 \
